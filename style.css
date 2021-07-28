@@ -49,3 +49,266 @@ ul .a-sing-up {
 	color: #0065fc;
 	font-weight: bold;
 }
+
+
+        @media screen and (max-width: 768px) {
+
+	/********* Header section ********/
+
+	.section-one {
+		margin-left: 30px;
+	/* margin-bottom: 10px;
+	font-size: 20px; */
+}
+	.main-container {
+		margin: 35px 0 25px 0;
+	}
+	header {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+		position: relative;
+		margin: 35px 0 25px 0;
+		border-bottom: 3px solid #f2f2f2;
+	}
+
+	header img {
+		margin-left: 30px;
+	}
+
+	header nav {
+		width: 100%;
+	}
+	nav ul {
+		width: 100%;
+		margin-top: 30px;
+		display: flex;
+		justify-content: space-evenly;
+		/* background-color:aqua; */
+	}
+
+	 ul .li-static-item {
+		padding-bottom: 20px;
+		width: inherit;
+		/* background-color: lightpink; */	
+	}
+
+	ul .a-border-hover {
+		width: 100px;
+		padding: 0 18.7vw 0 18.5vw;
+		/* background-color: khaki; */
+	} 
+
+	ul li .a-border-hover:hover {
+		border-top: none;
+		padding-bottom: 20px;
+		border-bottom: 3px solid #0065fc;
+		/* background-color: khaki; */
+	}
+
+	ul .li-absolute-item {
+		position: absolute;
+		top: 14px;
+		right: 15px;
+	}
+
+	/************** Section one ***************/
+
+		.filtre-container {
+		margin-left: 30px;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	
+}
+
+/************* Section one ****************/
+
+.section-one h1 {
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.section-one form {
+	margin: 15px 0 17px 0;
+	display: flex;
+}
+
+form i,
+form input {
+	font-size: 17px;
+	font-weight: 700;
+	padding: 20px;
+}
+
+form i {
+	background-color: #f2f2f2;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+form input[type='search'] {
+	border: 1px solid #f2f2f2;
+	border-right: none;
+	outline: none;
+	outline-color: #0065fc;
+}
+
+form input[type='submit'] {
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background-color: #0065fc;
+	color: #fff;
+	border: none;
+}
+
+.filtre-container {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.filtre-container h2 {
+	font-weight: bold;
+	float: left;
+	margin-right: 20px;
+}
+
+.filtre-container .filtre-group {
+	/* height: 57px; */
+	width: auto;
+	display: inline-block;
+	margin: 12px 10px 12px 0;
+	border: 2px solid #f2f2f2;
+	padding: 10px 0px 10px 55px;
+	border-radius: 30px;
+	position: relative;
+}
+
+.filtre-group .icon-back {
+	background-color: #deebff;
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	top: -2px;
+	left: -2px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.filtre-group .icon-back i {
+	color: #0065fc;
+}
+
+.section-one .exlama-mess-contain {
+	margin: 15px 0px 40px 0px;
+	display: flex;
+	align-items: center;
+}
+
+.section-one .exclamation-mark {
+	width: 30px;
+	height: 30px;
+	border: 1px solid #f2f2f2;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+}
+
+.section-one .exclamation-mark i {
+	color: #0065fc;
+}
+
+@media screen and (max-width: 1024) {
+	.filtre-container {
+		margin-left: 0px;
+		display: block;
+	}
+}
+
+/***************** sharing values *************/
+
+.section-two-and-three-flex-container {
+	display: flex;
+	justify-content: space-between;
+	/* margin: 10px 0; */
+}
+
+.section-two-and-three {
+	background-color: #f2f2f2;
+	padding: 50px 40px;
+	border-radius: 15px;
+}
+
+.commun-styles h3 {
+	font-size: 14px;
+}
+
+.section-two img,
+.section-four img {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	object-fit: cover;
+}
+
+.card {
+	border-radius: 15px;
+	box-shadow: 0px 0px 20px -3px #ccc;
+	background-color: #fff;
+	/* border-bottom-right-radius: ; */
+}
+
+/************* Section two ******************/
+
+.section-two {
+	width: 63.6%;
+}
+
+.section-two .wrapper {
+	width: auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 25px 0px;
+}
+
+.section-two .wrapper .card {
+	margin-bottom: 25px;
+	width: 16.5vw;
+	height: auto;
+	overflow: hidden;
+}
+
+.section-two .wrapper .card img {
+	width: 16.5vw;
+	height: 8vw;
+	border: 5px solid #fff;
+}
+
+.wrapper .card-detail {
+	margin: 10px;
+}
+
+.wrapper .card-detail p {
+	font-size: 14px;
+	margin: 7px 0;
+}
+
+.wrapper .card-detail i {
+	font-size: 14px;
+}
+
+.section-two .p-bold {
+	font-weight: bold;
+}
+
+main p span {
+	font-weight: bold;
+}
