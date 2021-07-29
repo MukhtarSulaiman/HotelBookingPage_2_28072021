@@ -17,9 +17,19 @@ a {
 	text-decoration: none;
 }
 
-.main-container {
+ i {
+	color: #0065fc;
+} 
+
+#main-container {
 	margin: 35px 45px;
 }
+
+.gray-icon-color {
+	color: #dddbdb;
+}
+
+
 /***************** Header of the page ******************/
 header {
 	display: flex;
@@ -51,16 +61,16 @@ ul .a-sing-up {
 }
 
 
-        @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
 	/********* Header section ********/
 
-	.section-one {
+	#section-one {
 		margin-left: 30px;
 	/* margin-bottom: 10px;
 	font-size: 20px; */
-}
-	.main-container {
+	}
+	#main-container {
 		margin: 35px 0 25px 0;
 	}
 	header {
@@ -127,12 +137,12 @@ ul .a-sing-up {
 
 /************* Section one ****************/
 
-.section-one h1 {
+#section-one h1 {
 	margin-bottom: 10px;
 	font-size: 20px;
 }
 
-.section-one form {
+#section-one form {
 	margin: 15px 0 17px 0;
 	display: flex;
 }
@@ -205,13 +215,13 @@ form input[type='submit'] {
 	color: #0065fc;
 }
 
-.section-one .exlama-mess-contain {
+#section-one .exlama-mess-contain {
 	margin: 15px 0px 40px 0px;
 	display: flex;
 	align-items: center;
 }
 
-.section-one .exclamation-mark {
+#section-one .exclamation-mark {
 	width: 30px;
 	height: 30px;
 	border: 1px solid #f2f2f2;
@@ -222,9 +232,11 @@ form input[type='submit'] {
 	margin-right: 10px;
 }
 
-.section-one .exclamation-mark i {
+#section-one .exclamation-mark i {
 	color: #0065fc;
 }
+
+
 
 @media screen and (max-width: 1024) {
 	.filtre-container {
@@ -233,9 +245,9 @@ form input[type='submit'] {
 	}
 }
 
-/***************** sharing values *************/
+/***************** shared values *************/
 
-.section-two-and-three-flex-container {
+#section-two-and-three-flex-container {
 	display: flex;
 	justify-content: space-between;
 	/* margin: 10px 0; */
@@ -312,3 +324,5 @@ form input[type='submit'] {
 main p span {
 	font-weight: bold;
 }
+
+
