@@ -21,6 +21,10 @@ i {
 	color: #0065fc;
 }
 
+span {
+	font-weight: bold;
+}
+
 #main-container {
 	margin: 35px 45px;
 }
@@ -30,6 +34,7 @@ i {
 }
 
 /***************** Header of the page ******************/
+
 header {
 	display: flex;
 	justify-content: space-between;
@@ -41,39 +46,36 @@ header ul {
 	list-style-type: none;
 }
 
-nav ul li {
+header nav ul li {
 	display: inline;
 }
 
-nav ul li a {
+header ul li a {
 	padding: 45px 30px;
 }
 
-ul li .a-border-hover:hover {
+header ul li .a-border-hover:hover {
 	color: #0065fc;
 	border-top: 3px solid #0065fc;
 }
 
-ul .a-sing-up {
+header ul .a-sing-up {
 	color: #0065fc;
 	font-weight: bold;
 }
 
-/***************** Media queries 768 ****************/
+/***************** Media query max-width 768 ****************/
 
 
 @media screen and (max-width: 768px) {
-	/********* Header section ********/
 
 	#main-container {
 		margin: 35px 0 25px 0 !important;
-		background-color: lightgreen;
-	}
-
-	#section-one {
-		margin: 18px;
+		/* background-color: lightgreen; */
 	}
 	
+	/********* Media query Header  ********/
+
 	header {
 		display: flex;
 		flex-direction: column;
@@ -91,39 +93,43 @@ ul .a-sing-up {
 	header nav {
 		width: 100%;
 	}
-	nav ul {
+	header nav ul {
 		width: 100%;
 		margin-top: 30px;
 		display: flex;
 		justify-content: space-between;
 	}
 
-	ul .li-static-item {
+	header ul .li-static-item {
 		width: inherit;
 		display: flex;
 		justify-content: space-between;
 	}
 
-	ul .a-border-hover {
+	header ul .a-border-hover {
 		padding: inherit;
 		border-bottom: 3px solid #f2f2f2;
 		padding: 0 46% 40px 36.5%;
 		overflow: hidden;
 	}	
 
-	ul li .a-border-hover:hover {
+	header ul li .a-border-hover:hover {
 		border-top: none;
 		padding-bottom: 20px;
 		border-bottom: 3px solid #0065fc;
 	}
 
-	ul .li-absolute-item {
+	header ul .li-absolute-item {
 		position: absolute;
 		top: 16px;
 		right: 1px;
 	}
 
-	/********************* Section one ************************/
+	/********************* Media query Section one ************************/
+
+	#section-one {
+		margin: 18px;
+	}
 
 	#section-one h1 {
 		font-size: 22px !important;
@@ -174,13 +180,26 @@ ul .a-sing-up {
 		flex-wrap: wrap;
 	} 
 
+	/********** Media query section two  */
+
 	.section-two-and-three {
-	background-color: #f2f2f2;
-	padding: 50px 18px 40px 18px !important;
+	padding: 40px 18px 20px 18px !important;
 	border-radius: 0px !important;
-}
+	}
 
+	 #section-two {
+		background-color: #fff;
+		padding-top: 15px !important;
+	}
+	
+	#section-two .wrapper .card {
+		width: 100% !important;
+	}
 
+	#section-two .wrapper .card img {
+		width: 100% !important;
+		 height: 9vw ;
+	}
 }
 
 /************* Section one ****************/
@@ -230,7 +249,6 @@ form .btn-search-icon {
 }
 
 .filtre-container {
-	/* background-color: aqua; */
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
@@ -298,9 +316,12 @@ form .btn-search-icon {
 	font-size: 15px;
 }
 
-/***************** Media queries 1024 ****************/
+/***************** Media queries max-width 1024 ****************/
 
 @media screen and (max-width: 1024) {
+
+	/**************** Media query  section one */
+
 	.filtre-container {
 		margin-left: 0px;
 		display: block;
@@ -328,13 +349,13 @@ form .btn-search-icon {
 
 #section-two img,
 #section-four img {
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
+	border-top-left-radius: 17px;
+	border-top-right-radius: 17px;
 	object-fit: cover;
 }
 
 .card {
-	border-radius: 15px;
+	border-radius: 17px;
 	box-shadow: 0px 0px 20px -3px #ccc;
 	background-color: #fff;
 	/* border-bottom-right-radius: ; */
@@ -384,11 +405,10 @@ form .btn-search-icon {
 	font-size: 14px;
 }
 
-main p span {
-	font-weight: bold;
-}
+/* Media query max-width 1160 */
 
 @media screen and (max-width: 1160px){
+
 	#section-two-and-three-flex-container {
 	display: flex;
 	flex-direction: column;
@@ -399,14 +419,30 @@ main p span {
 		width: 100% !important;
 	}
 
+	/* Media query section two */
+
+
 	#section-two {
 		order: 2;
+		margin-top: 20px;
 	}
+
+	#section-two .wrapper .card {
+		width: 23.9vw;
+		height: auto;
+		
+	}
+
+	#section-two .wrapper img {
+		width: 23.9vw !important;
+		height: 130px !important;
+	}
+
+	/********** Media query section three ********$*/
 
 	#section-three {
 		order: 1;
 	}
-
 
 	#section-three .wrapper .card {
 		margin-bottom: 15px;
@@ -415,6 +451,7 @@ main p span {
 	#section-three .card .card-detail {
 		margin-left: 15px;
 	}
+
 }
 
 /*************** Section three *****************/
@@ -477,4 +514,54 @@ main p span {
 #section-three .card-detail p {
 	margin-bottom: 45px;	
 }
+
+/**************** Section four ***************/
+
+#section-four {
+	height: 500px;
+	margin: 50px 0 2px 0;
+}
+
+#section-four .wrapper {
+	height: auto;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#section-four .medium-small-img-flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#section-four .big-img-container,
+.section-four .medium-small-img-container {
+	padding-bottom: 20px;
+}
+
+#section-four img,
+#section-four img {
+	width: 22vw;
+}
+
+#section-four .big-img-container img {
+	height: 370px;
+}
+
+#section-four .medium-small-img-container .medium-img {
+	height: 160px;
+}
+
+#section-four .medium-small-img-container .small-img {
+	height: 120px;
+	object-fit: cover;
+}
+
+#section-four .card h3 {
+	padding-top: 18px;
+	padding-left: 18px;
+	font-size: 14px;
+}
+
 
