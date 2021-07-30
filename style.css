@@ -10,7 +10,7 @@
 }
 
 h2 {
-	font-size: 20px;
+	font-size: 17px;
 }
 
 a {
@@ -59,16 +59,19 @@ ul .a-sing-up {
 	font-weight: bold;
 }
 
+/***************** Media queries 768 ****************/
+
+
 @media screen and (max-width: 768px) {
 	/********* Header section ********/
 
 	#main-container {
 		margin: 35px 0 25px 0 !important;
-		/* background-color: lightgreen; */
+		background-color: lightgreen;
 	}
 
 	#section-one {
-		margin: 30px;
+		margin: 18px;
 	}
 	
 	header {
@@ -120,9 +123,10 @@ ul .a-sing-up {
 		right: 1px;
 	}
 
-	/************** Section one ***************/
+	/********************* Section one ************************/
+
 	#section-one h1 {
-		font-size: 21px !important;
+		font-size: 22px !important;
 	}
 
 	#section-one form {
@@ -139,7 +143,7 @@ ul .a-sing-up {
 	}
 
 	form input[type="search"] {
-		width: 85% !important;
+		width: 86% !important;
 		padding: 20px !important;
 		height: 60px;
 	}
@@ -152,12 +156,12 @@ ul .a-sing-up {
 	form .btn-search-icon {
 		visibility: visible !important;
 		height: 60px;
-		width: 80px;
+		width: 60px;
 		background-color: #0065fc;
 		border-radius: 15px;
 		border: none;
 		position: absolute;
-		right: 25px;
+		right: 18px;
 	}
 	form .btn-search-icon i  {
 		color: #fff;
@@ -169,6 +173,14 @@ ul .a-sing-up {
 		align-items: center;
 		flex-wrap: wrap;
 	} 
+
+	.section-two-and-three {
+	background-color: #f2f2f2;
+	padding: 50px 18px 40px 18px !important;
+	border-radius: 0px !important;
+}
+
+
 }
 
 /************* Section one ****************/
@@ -218,9 +230,12 @@ form .btn-search-icon {
 }
 
 .filtre-container {
+	/* background-color: aqua; */
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
+	font-size: 1px ;
+	position: relative;
 }
 
 .filtre-container h2 {
@@ -235,7 +250,7 @@ form .btn-search-icon {
 	display: inline-block;
 	margin: 12px 10px 12px 0;
 	border: 2px solid #f2f2f2;
-	padding: 10px 0px 10px 55px;
+	padding: 10px 0px 10px 50px;
 	border-radius: 30px;
 	position: relative;
 }
@@ -243,8 +258,8 @@ form .btn-search-icon {
 .filtre-group .icon-back {
 	background-color: #deebff;
 	position: absolute;
-	width: 48px;
-	height: 48px;
+	width: 43px;
+	height: 43px;
 	border-radius: 50%;
 	top: -2px;
 	left: -2px;
@@ -259,30 +274,38 @@ form .btn-search-icon {
 
 #section-one .exlama-mess-contain {
 	margin: 15px 0px 40px 0px;
-	display: flex;
-	align-items: center;
 }
 
 #section-one .exclamation-mark {
-	width: 30px;
-	height: 30px;
-	border: 1px solid #f2f2f2;
+	width: 23px;
+	height: 23px;
+	border: 1.5px solid #f2f2f2;
 	border-radius: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-right: 10px;
+	position: absolute;
+}
+.exclamation-mark i {
+	color: #0065fc;
+	font-size: 13px;
+	transform: rotate(180deg);
 }
 
-#section-one .exclamation-mark i {
-	color: #0065fc;
+.exlama-mess-contain p {
+	padding: 2px 0 0 35px;
+	font-size: 15px;
 }
+
+/***************** Media queries 1024 ****************/
 
 @media screen and (max-width: 1024) {
 	.filtre-container {
 		margin-left: 0px;
 		display: block;
 	}
+
 }
 
 /***************** shared values *************/
@@ -295,7 +318,7 @@ form .btn-search-icon {
 
 .section-two-and-three {
 	background-color: #f2f2f2;
-	padding: 50px 40px;
+	padding: 50px 40px 40px 40px;
 	border-radius: 15px;
 }
 
@@ -332,7 +355,7 @@ form .btn-search-icon {
 }
 
 #section-two .wrapper .card {
-	margin-bottom: 25px;
+	margin-bottom: 30px;
 	width: 16.5vw;
 	height: auto;
 	overflow: hidden;
@@ -365,39 +388,74 @@ main p span {
 	font-weight: bold;
 }
 
+@media screen and (max-width: 1160px){
+	#section-two-and-three-flex-container {
+	display: flex;
+	flex-direction: column;
+	}
+
+	#section-two,
+	#section-three {
+		width: 100% !important;
+	}
+
+	#section-two {
+		order: 2;
+	}
+
+	#section-three {
+		order: 1;
+	}
+
+
+	#section-three .wrapper .card {
+		margin-bottom: 15px;
+	}
+
+	#section-three .card .card-detail {
+		margin-left: 15px;
+	}
+}
+
 /*************** Section three *****************/
 
-.section-three {
+#section-three {
 	width: 34.3%;
 }
 
-.section-three .populaire {
+#section-three .populaire {
 	display: flex;
 	justify-content: space-between;
 }
 
-.section-three .populaire i {
+#section-three .populaire i {
 	font-size: 23px;
 	color: #000;
 }
 
-.section-three .wrapper {
-	margin-top: 25px;
-	display: flex;
-	flex-direction: column;
+#section-three aside {
+	height: 100%;
+	/* background-color: khaki; */
 }
 
-.section-three .wrapper .card {
-	margin-bottom: 25px;
+#section-three .wrapper {
+	margin-top: 25px;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 90%;
+}
+
+#section-three .wrapper .card {
 	width: auto;
-	height: 19.5vh;
+	height: 148px;
 	border: 5px solid #fff;
 	overflow: hidden;
 }
 
-.section-three .card img {
+#section-three .card img {
 	width: 35%;
-	height: 19.5vh;
+	height: 148px;
 	object-fit: cover;
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
@@ -405,6 +463,18 @@ main p span {
 	margin-right: 20px;
 }
 
-.section-three .card-detail .stars {
-	margin-top: 30px;
+
+#section-three .card-detail {
+	width:auto;
+	height: 120px;
+	/* background-color: lightgreen; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin-bottom: 5px;
 }
+
+#section-three .card-detail p {
+	margin-bottom: 45px;	
+}
+
