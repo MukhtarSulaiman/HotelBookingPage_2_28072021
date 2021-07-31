@@ -339,7 +339,6 @@ form .btn-search-icon {
 #section-two-and-three-flex-container {
 	display: flex;
 	justify-content: space-between;
-	/* margin: 10px 0; */
 }
 
 .section-two-and-three {
@@ -363,7 +362,13 @@ form .btn-search-icon {
 	border-radius: 17px;
 	box-shadow: 0px 0px 20px -3px #ccc;
 	background-color: #fff;
-	/* border-bottom-right-radius: ; */
+	transform: scale(1);
+	transition-property: transform;
+	transition-duration: 400ms;
+}
+
+.card:hover {
+	transform: scale(1.15)
 }
 
 /************* Section two ******************/
@@ -457,6 +462,9 @@ form .btn-search-icon {
 		margin-left: 15px;
 	}
 
+	.card:hover {
+	transform: scale(1)
+	}
 }
 
 /*************** Section three *****************/
