@@ -127,8 +127,9 @@ header ul .a-sing-up {
 
 	/********************* Media query Section one ************************/
 
-	#section-one {
-		margin: 18px;
+	#section-one,
+	#section-four {
+		margin: 18px !important;
 	}
 
 	#section-one h1 {
@@ -191,6 +192,10 @@ header ul .a-sing-up {
 		background-color: #fff;
 		padding-top: 15px !important;
 	}
+
+	#section-two .wrapper {
+		margin-bottom: 5px !important;
+	}
 	
 	#section-two .wrapper .card {
 		width: 100% !important;
@@ -198,7 +203,7 @@ header ul .a-sing-up {
 
 	#section-two .wrapper .card img {
 		width: 100% !important;
-		 height: 9vw ;
+		height: 9vw ;
 	}
 }
 
@@ -445,7 +450,7 @@ form .btn-search-icon {
 	}
 
 	#section-three .wrapper .card {
-		margin-bottom: 15px;
+		margin-bottom: 20px;
 	}
 
 	#section-three .card .card-detail {
@@ -524,7 +529,7 @@ form .btn-search-icon {
 
 #section-four .wrapper {
 	height: auto;
-	margin-top: 20px;
+	margin-top: 25px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -536,17 +541,17 @@ form .btn-search-icon {
 }
 
 #section-four .big-img-container,
-.section-four .medium-small-img-container {
-	padding-bottom: 20px;
+#section-four .medium-small-img-container {
+	padding-bottom: 30px;
+	width: 21.5vw;
 }
 
-#section-four img,
 #section-four img {
-	width: 22vw;
+	width: 100%;
 }
 
 #section-four .big-img-container img {
-	height: 370px;
+	height: 380px;
 }
 
 #section-four .medium-small-img-container .medium-img {
@@ -554,14 +559,34 @@ form .btn-search-icon {
 }
 
 #section-four .medium-small-img-container .small-img {
-	height: 120px;
+	height: 110px;
 	object-fit: cover;
 }
 
 #section-four .card h3 {
-	padding-top: 18px;
+ 	padding-top: 18px; 
 	padding-left: 18px;
-	font-size: 14px;
+}
+
+@media screen and (max-width:1160px) {
+
+	#section-four .wrapper,
+	#section-four .medium-small-img-flex {
+		display: block;	
+	}
+
+	#section-four .big-img-container,
+	#section-four .medium-small-img-container {
+		padding-bottom: 30px;
+		width: 100% !important;
+		margin-bottom: 25px;
+	}
+
+	#section-four .medium-small-img-container .medium-img,
+	#section-four .medium-small-img-container .small-img, 
+	#section-four .big-img-container img{
+		height: 160px;
+	}
 }
 
 
