@@ -9,8 +9,12 @@
 	color: #000;
 }
 
+h1 {
+	font-size: 1.3rem;
+}
+
 h2 {
-	font-size: 17px;
+	font-size: 1.2rem;
 }
 
 a {
@@ -66,12 +70,10 @@ header ul .a-sing-up {
 
 /***************** Media query max-width 768 ****************/
 
-
 @media screen and (max-width: 768px) {
 
 	#main-container {
 		margin: 35px 0 25px 0 !important;
-		/* background-color: lightgreen; */
 	}
 	
 	/********* Media query Header  ********/
@@ -130,10 +132,6 @@ header ul .a-sing-up {
 	#section-one,
 	#section-four {
 		margin: 18px !important;
-	}
-
-	#section-one h1 {
-		font-size: 22px !important;
 	}
 
 	#section-one form {
@@ -205,13 +203,27 @@ header ul .a-sing-up {
 		width: 100% !important;
 		height: 9vw ;
 	}
+
+	/* Media query footer */
+	footer {
+		display: flex;
+		flex-direction: column;
+		
+	}
+	footer .flex-container {
+		width: 100% !important;
+	
+	}
+
+	footer .margin-bottom {
+		margin-bottom: 50px ;
+	}
 }
 
 /************* Section one ****************/
 
 #section-one h1 {
 	margin-bottom: 10px;
-	font-size: 20px;
 }
 
 #section-one form {
@@ -257,12 +269,12 @@ form .btn-search-icon {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	font-size: 1px ;
 	position: relative;
 }
 
 .filtre-container h2 {
-	font-weight: bold;
+	font-weight: 650;
+	font-size: 17px;
 	float: left;
 	margin-right: 20px;
 }
@@ -271,9 +283,9 @@ form .btn-search-icon {
 	/* height: 57px; */
 	width: auto;
 	display: inline-block;
-	margin: 12px 10px 12px 0;
+	margin: 10px 10px 10px 0;
 	border: 2px solid #f2f2f2;
-	padding: 10px 0px 10px 50px;
+	padding: 10px 0px 10px 48px;
 	border-radius: 30px;
 	position: relative;
 }
@@ -281,8 +293,8 @@ form .btn-search-icon {
 .filtre-group .icon-back {
 	background-color: #deebff;
 	position: absolute;
-	width: 43px;
-	height: 43px;
+	width: 44px;
+	height: 44px;
 	border-radius: 50%;
 	top: -2px;
 	left: -2px;
@@ -530,7 +542,7 @@ form .btn-search-icon {
 /**************** Section four ***************/
 
 #section-four {
-	height: 500px;
+	height: auto;
 	margin: 60px 0 60px 0;
 	/* padding-bottom: 30px; */
 }
@@ -600,7 +612,7 @@ form .btn-search-icon {
 /******************* footer ******************/
 
 footer {
-	height: 220px;
+	height: auto;
 	padding: 45px;
 	background-color: #f2f2f2;
 	display: flex;
@@ -608,12 +620,14 @@ footer {
 }
 
 footer .flex-container {
+	width: 40%;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	margin-right: 20%;
+	margin-right: 7%;
 }
 
 footer .flex-container small {
 	margin-top: 18px;
+	font-size: 15px;
 }
