@@ -26,7 +26,7 @@ span {
 }
 
 #main-container {
-	margin: 35px 45px;
+	margin: 35px 45px 40px 45px;
 }
 
 .gray-icon-color {
@@ -289,6 +289,12 @@ form .btn-search-icon {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transform: rotate(0deg);
+	transition: transform 800ms;
+}
+
+.filtre-group:hover .icon-back{
+	transform: rotate(360deg);
 }
 
 .filtre-group .icon-back i {
@@ -331,7 +337,6 @@ form .btn-search-icon {
 		margin-left: 0px;
 		display: block;
 	}
-
 }
 
 /***************** shared values *************/
@@ -345,10 +350,6 @@ form .btn-search-icon {
 	background-color: #f2f2f2;
 	padding: 50px 40px 40px 40px;
 	border-radius: 15px;
-}
-
-.commun-styles h3 {
-	font-size: 14px;
 }
 
 #section-two img,
@@ -431,7 +432,6 @@ form .btn-search-icon {
 
 	/* Media query section two */
 
-
 	#section-two {
 		order: 2;
 		margin-top: 20px;
@@ -439,8 +439,7 @@ form .btn-search-icon {
 
 	#section-two .wrapper .card {
 		width: 23.9vw;
-		height: auto;
-		
+		height: auto;	
 	}
 
 	#section-two .wrapper img {
@@ -532,12 +531,13 @@ form .btn-search-icon {
 
 #section-four {
 	height: 500px;
-	margin: 50px 0 2px 0;
+	margin: 60px 0 60px 0;
+	/* padding-bottom: 30px; */
 }
 
 #section-four .wrapper {
 	height: auto;
-	margin-top: 25px;
+	margin-top: 37px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -597,4 +597,23 @@ form .btn-search-icon {
 	}
 }
 
+/******************* footer ******************/
 
+footer {
+	height: 220px;
+	padding: 45px;
+	background-color: #f2f2f2;
+	display: flex;
+	justify-content: flex-start;
+}
+
+footer .flex-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-right: 20%;
+}
+
+footer .flex-container small {
+	margin-top: 18px;
+}
