@@ -65,7 +65,7 @@ header ul li a {
 
 header ul li .a-border-on-hover:hover {
 	color: #0065fc;
-	border-top: 3px solid #0065fc;
+	border-top: 2px solid #0065fc;
 }
 
 header ul .a-sing-up {
@@ -287,7 +287,6 @@ form .btn-search-icon {
 }
 
 .filtre-container h2 {
-	font-weight: 620;
 	float: left;
 	margin-right: 20px;
 }
@@ -366,12 +365,10 @@ form .btn-search-icon {
 
 /***************** Media queries max-width 1024 ****************/
 
-@media screen and (max-width: 1024) {
-
+@media screen and (max-width:1024px) {
 	/**************** Media query  section one */
-
-	.filtre-container {
-		margin-left: 0px;
+	.filtre-container h2 {
+		margin: 13px 20px 13px 0;
 		display: block;
 	}
 }
