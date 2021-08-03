@@ -308,7 +308,7 @@ form .btn-search-icon {
 
 #section-three .wrapper {
 	margin-top: 25px;
-	display: -webkit-flex;
+	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	height: 90%;
@@ -362,6 +362,8 @@ form .btn-search-icon {
 	/* Media query section two */
 
 	#section-two {
+		-webkit-order: 2;
+		-moz-order: 2;
 		order: 2;
 		margin-top: 20px;
 	}
@@ -379,6 +381,8 @@ form .btn-search-icon {
 	/* Media query section three */
 
 	#section-three {
+		-webkit-order: 1;
+		-moz-order: 1;
 		order: 1;
 	}
 
